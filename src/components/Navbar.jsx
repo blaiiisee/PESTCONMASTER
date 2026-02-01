@@ -50,7 +50,7 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Nav */}
-                <div className="desktop-nav" style={{ display: 'flex', gap: '2rem' }}>
+                <div className="desktop-nav" style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
@@ -60,6 +60,15 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
+                    <a
+                        href="https://form.jotform.com/260310249296051"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                        style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                    >
+                        Request Quote
+                    </a>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -96,6 +105,16 @@ const Navbar = () => {
                                 {link.name}
                             </a>
                         ))}
+                        <a
+                            href="https://form.jotform.com/260310249296051"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{ marginTop: '0.5rem' }}
+                            onClick={handleLinkClick}
+                        >
+                            Request Quote
+                        </a>
                     </div>
                 )}
             </div>

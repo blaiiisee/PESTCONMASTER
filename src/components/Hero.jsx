@@ -47,12 +47,23 @@ const Hero = () => {
                     <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', opacity: 0.9, lineHeight: 1.6 }}>
                         Experts in essential pest management, committed to providing a clean and pest-free environment so customers can grow and flourish.
                     </p>
-                    <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="#contact" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
-                            Contact Us <ArrowRight size={20} />
-                        </a>
-                        <a href="#services" className="btn btn-outline" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
-                            Our Services
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
+                        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <a href="#contact" className="btn btn-secondary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
+                                Contact Us
+                            </a>
+                            <a href="#services" className="btn btn-outline" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
+                                Our Services
+                            </a>
+                        </div>
+                        <a
+                            href="https://form.jotform.com/260310249296051"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}
+                        >
+                            Request Quote <ArrowRight size={22} />
                         </a>
                     </div>
                 </div>
